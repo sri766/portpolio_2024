@@ -2,10 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+  font-family: 'Modern';
+  src: url("/fonts/ModernWarfare-OV7KP.ttf") format("truetype");
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,12 +25,112 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #030014;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: #d7d7d7;
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #222224;
+
+}
+
+::-webkit-scrollbar-track {
+  background: #33333386;
+  border-radius: 1rem;
+
+}
+
+.gradient{
+  background: linear-gradient(45deg, #ffbb00, #ff00b7);
+  filter: blur(20px);
+}
+
+.gradient::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+  background: linear-gradient(45deg, #ffbb00, #ff00b7);
+  animation: glow 15s linear infinite;
+  z-index: -1;
+}
+
+.gradient-blue{
+  background: linear-gradient(45deg, #00b9fc, #40ff00);
+  filter: blur(20px);
+}
+
+.gradient-blue::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+  background: linear-gradient(45deg, #00b9fc, #40ff00);
+  animation: glow 15s linear infinite;
+  z-index: -1;
+}
+
+.logo{
+  background: linear-gradient(45deg, #ffbb00, #ff00b7 );
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.text{
+  writing-mode: vertical-lr;
+  text-orientation: vertical-rl;
+}
+
+/* .custom-shape {
+  position: relative;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .custom-shape {
+    clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0% 95%, 0% 5%);
+  }
+} */
+
+
+.text-gradient{
+  background: linear-gradient(45deg, #4627fc, #c320ff);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+
+}
+
+
+
+@keyframes glow {
+  from{
+    transform: translate(-10%, -10%) skew(0deg);
+  }
+  to{
+    transform: translate(10%, 10%) skew(16deg);
+  }
 }
 
 @layer utilities {
