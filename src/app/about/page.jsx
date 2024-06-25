@@ -5,7 +5,7 @@ const page = () => {
   return (
     <div className='h-screen lg:mx-64 mx-12'>
       <div className='image flex justify-center items-center'>
-        <Image src='/sri.png' className='rounded-lg border-white' width={350} height={350} alt='hero' />
+        <Image src='/assets/sri.png' className='rounded-lg border-white' width={350} height={350} alt='hero' />
       </div>
       <div className='intro flex flex-col justify-center items-center'>
       <h1 className='text-4xl font-bold my-2'>About Me</h1>
