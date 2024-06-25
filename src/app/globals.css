@@ -21,6 +21,12 @@ body{
   -webkit-background-clip: text;
 }
 
+
+@font-face {
+  font-family: 'Modern';
+  src: url('/fonts/ModernWarfare.ttf') format('truetype');
+}
+
   @layer base {
     :root {
       --background: 0 0% 100%;

@@ -10,69 +10,69 @@ import Image from "next/image";
 
 const features = [
   {
-    Icon: FileTextIcon,
-    name: "Save your files",
-    description: "We automatically save your files as you type.",
+    Icon: GlobeIcon,
+    name: "StoreTrend",
+    description: "Ecommerce Website build with React,Redux and Strapi.",
     href: "/",
     cta: "Learn more",
-    background: <Image height={500} width={500} className="absolute -right-20 -top-20 opacity-60" src="/assets/project/portfolio.png" />,
+    background: <Image height={600} width={600} className="absolute opacity-60 object-cover" src="/assets/project/storetrend1.png" />,
+    className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
+  },
+  {
+    Icon: FileTextIcon,
+    name: "MovieFlex",
+    description: "A collection of Movies with TMDB API.",
+    href: "/",
+    cta: "Learn more",
+    background: <Image height={1500} width={500} className="absolute opacity-60 object-cover" src="/assets/project/movie.png" />,
     className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
   },
   {
     Icon: InputIcon,
-    name: "Full text search",
+    name: "Netflix Clone with CI/CD",
     description: "Search through all your files in one place.",
     href: "/",
     cta: "Learn more",
-    background: <Image height={500} width={500} className="absolute -right-20 -top-20 opacity-60" src="/assets/project/movie1.png" />,
+    // background: <Image height={500} width={500} className="absolute opacity-60 aspect-video" src="/assets/project/hashnode.png" />,
     className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
   },
   {
-    Icon: GlobeIcon,
-    name: "Multilingual",
-    description: "Supports 100+ languages and counting.",
-    href: "/",
-    cta: "Learn more",
-    background: <Image height={500} width={500} className="absolute -right-20 -top-20 opacity-60" src="/assets/project/movie2.png" />,
-    className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
-  },
-  {
     Icon: CalendarIcon,
-    name: "Calendar",
-    description: "Use the calendar to filter your files by date.",
+    name: "Disney+ Clone",
+    description: "Build with React, Firebase Auth and FireStore ",
     href: "/",
     cta: "Learn more",
-    background: <Image height={500} width={500} className="absolute -right-20 -top-20 opacity-60" src="/assets/project/disney1.png" />,
+    background: <Image height={600} width={600} className="absolute opacity-60 object-cover" src="/assets/project/disney3.png" />,
     className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
   },
   {
     Icon: BellIcon,
-    name: "Notifications",
+    name: "IndiQuest",
     description:
-      "Get notified when someone shares a file or mentions you in a comment.",
+      "A Web-App which promote India's Heritage and Culture",
     href: "/",
     cta: "Learn more",
-    background: <Image height={500} width={500} className="absolute -right-20 -top-20 opacity-60" src="/assets/project/indiquest1.png" />,
+    background: <Image height={500} width={500} className="absolute opacity-60 object-cover" src="/assets/project/indiquest.png" />,
     className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
   },
 ];
 
 const BentoDemo = () => {
   return (
-    <div className="flex flex-col relative lg:mx-64 ">
+    <div className="flex flex-col relative lg:mx-64">
       <div className="title">
         <video
             autoPlay
             muted
             loop
             id='myVideo'
-            className='h-full w-full rotate-180 left-0 top-[-55%] z-[-5] object-cover opacity-35'
+            className='absolute h-full w-full rotate-180 left-0 top-[-55%] z-[-5] object-cover opacity-35'
           >
-            <source src='/space-assets/encryption.webm' type='video/webm' />
+            <source src='/space-assets/encryption.webm' type='video/webm'/>
           </video>
-          <h1 className="absolute top-0 left-[50%] lg:top-[15%] lg:left-[25%] lg:text-9xl py-4 sm:text-4xl font-bold text-white text-gradient">Projects</h1>
       </div>
-      <BentoGrid className="lg:grid-cols-3">
+      <h1 className="lg:text-9xl flex justify-center items-center py-4 text-4xl font-bold text-white text-gradient">Projects</h1>
+      <BentoGrid className="lg:grid-cols-3 my-4 mx-auto">
       {features.map((feature) => (
         <BentoCard
           key={feature.name} 
