@@ -18,8 +18,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
-        modern : ['Modern','sans-serif']
+        modern : ['Modern','sans-serif'],
+        wild : ['StayWild','sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

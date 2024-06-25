@@ -27,6 +27,11 @@ body{
   src: url('/fonts/ModernWarfare.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'StayWild';
+  src: url('/fonts/StayWild.ttf') format('truetype');
+}
+
   @layer base {
     :root {
       --background: 0 0% 100%;

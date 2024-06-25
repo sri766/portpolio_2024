@@ -59,7 +59,7 @@ const features = [
 
 const BentoDemo = () => {
   return (
-    <div className="flex flex-col relative lg:mx-64">
+    <div className="flex flex-col h-full relative lg:mx-64">
       <div className="title">
         <video
             autoPlay
@@ -71,8 +71,8 @@ const BentoDemo = () => {
             <source src='/space-assets/encryption.webm' type='video/webm'/>
           </video>
       </div>
-      <h1 className="lg:text-9xl flex justify-center items-center py-4 text-4xl font-bold text-white text-gradient">Projects</h1>
-      <BentoGrid className="lg:grid-cols-3 my-4 mx-auto">
+      <h1 className="lg:text-9xl flex justify-center items-center py-4 text-4xl font-semibold text-white text-gradient">Projects</h1>
+      <BentoGrid className="lg:grid-cols-3 mx-6 my-8">
       {features.map((feature) => (
         <BentoCard
           key={feature.name} 
