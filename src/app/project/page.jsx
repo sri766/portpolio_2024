@@ -69,7 +69,7 @@ const BentoDemo = () => {
           >
             <source src='/space-assets/encryption.webm' type='video/webm' />
           </video>
-          <h1 className="absolute top-[15%] left-[25%] lg:text-9xl py-4 sm:text-4xl font-bold text-white text-gradient">Projects</h1>
+          <h1 className="absolute top-0 left-[50%] lg:top-[15%] lg:left-[25%] lg:text-9xl py-4 sm:text-4xl font-bold text-white text-gradient">Projects</h1>
       </div>
       <BentoGrid className="lg:grid-cols-3">
       {features.map((feature) => (

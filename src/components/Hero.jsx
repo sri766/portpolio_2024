@@ -10,7 +10,7 @@ const Hero = () => {
       <div className='flex flex-col lg:flex-row min-h-screen justify-evenly items-center'>
       <div className='image '>
         <Image 
-          src='/assets/sri.png' 
+          src='/assets/srisanth.webp' 
           className='rounded-lg border-white'
           width={350} 
           height={350} 
