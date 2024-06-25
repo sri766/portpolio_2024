@@ -22,7 +22,7 @@ const Hero = () => {
       </div>
       <div className='intro relative'>
         <div className='content flex flex-col justify-center items-center lg:block'>
-          <h1 className='lg:text-4xl text-2xl font-bold'>Hello, I'm 
+          <h1 className='lg:text-4xl text-2xl font-bold'>Hello, I&apos;m 
             <span className='text-gradient ml-2'>Srisanth Seth</span>
           </h1>
           <h2 className='text-xl lg:text-2xl font-medium '>A FullStack Developer and UX/UI Designer</h2>
