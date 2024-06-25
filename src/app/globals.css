@@ -21,7 +21,6 @@ body{
   -webkit-background-clip: text;
 }
 
-
   @layer base {
     :root {
       --background: 0 0% 100%;

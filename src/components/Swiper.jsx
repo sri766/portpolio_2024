@@ -8,8 +8,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
-
-import '../app/styles/Swiper.modules.css';
+import '../app/styles/Swiper.modules.css'
+import Image from 'next/image';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
@@ -50,30 +50,31 @@ function App() {
         className="swiper_container"
       >
         <SwiperSlide>
-          <img src='/assets/project/movie2.png' alt="slide_image" />
+          <Image src='/assets/project/movie2.png' alt="slide_image" width={500} height={250}/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src='/assets/project/indiquest1.png' alt="slide_image" />
+          <Image src='/assets/project/indiquest1.png' alt="slide_image" width={500} height={250}/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src='/assets/project/disney1.png' alt="slide_image" />
+          <Image src='/assets/project/disney1.png' alt="slide_image" width={500} height={250}/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src='/assets/project/indiquest2.png' alt="slide_image" />
+          <Image src='/assets/project/indiquest2.png' alt="slide_image" width={500} height={250}/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src='/assets/project/movie1.png' alt="slide_image" />
+          <Image src='/assets/project/movie1.png' alt="slide_image" width={500} height={250}/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src='/assets/project/portfolio1.png' alt="slide_image" />
+          <Image src='/assets/project/portfolio1.png' alt="slide_image" width={500} height={250}/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src='/assets/project/storetrend1.png' alt="slide_image" />
+          <Image src='/assets/project/storetrend1.png' alt="slide_image" width={500} height={250}/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src='/assets/project/indiquest3.png' alt="slide_image" />
+          <Image src='/assets/project/indiquest3.png' alt="slide_image" width={500} height={250}/>
         </SwiperSlide>
         
+
 
         <div className="slider-controler">
           <div className="swiper-button-prev slider-arrow">
