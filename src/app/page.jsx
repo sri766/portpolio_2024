@@ -1,7 +1,7 @@
 import Hero from "../components/Hero";
 import Skills from "../components/Skills";
 import Swiper from "../components/Swiper";
-
+import Experience from "../components/Experience";
 
 export default function Home() {
 
@@ -18,6 +18,7 @@ export default function Home() {
         </video>
       <div className="main relative my-2 mx-4 lg:mx-64">
         <Hero />
+        <Experience />
         <Skills />
         <Swiper />
       </div>
