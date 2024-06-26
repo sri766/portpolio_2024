@@ -76,7 +76,7 @@ const Skills = () => {
                     <Image 
                       src={items.path} 
                       alt={items.name}
-                      className='object-cover object-center'
+                      className='object-cover object-center w-auto h-auto'
                       width={50}
                       height={50}
                     />

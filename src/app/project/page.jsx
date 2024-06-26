@@ -15,7 +15,7 @@ const features = [
     description: "Ecommerce Website build with React,Redux and Strapi.",
     href: "/",
     cta: "Learn more",
-    background: <Image height={600} width={600} className="absolute opacity-60 object-cover" src="/assets/project/storetrend1.png" />,
+    background: <Image height={600} width={600} className="absolute opacity-60 object-cover" src="/assets/project/storetrend1.png" alt="storetrend"/>,
     className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
   },
   {
@@ -24,7 +24,7 @@ const features = [
     description: "A collection of Movies with TMDB API.",
     href: "/",
     cta: "Learn more",
-    background: <Image height={1500} width={500} className="absolute opacity-60 object-cover" src="/assets/project/movie.png" />,
+    background: <Image height={1500} width={500} className="absolute opacity-60 object-cover" src="/assets/project/movie.png" alt="movie"/>,
     className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
   },
   {
@@ -33,7 +33,7 @@ const features = [
     description: "Search through all your files in one place.",
     href: "/",
     cta: "Learn more",
-    // background: <Image height={500} width={500} className="absolute opacity-60 aspect-video" src="/assets/project/hashnode.png" />,
+    // background: <Image height={500} width={500} className="absolute opacity-60 aspect-video" src="/assets/project/hashnode.png" alt="devops"/>,
     className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
   },
   {
@@ -42,7 +42,7 @@ const features = [
     description: "Build with React, Firebase Auth and FireStore ",
     href: "/",
     cta: "Learn more",
-    background: <Image height={600} width={600} className="absolute opacity-60 object-cover" src="/assets/project/disney3.png" />,
+    background: <Image height={600} width={600} className="absolute opacity-60 object-cover" src="/assets/project/disney3.png" alt="disney+"/>,
     className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
   },
   {
@@ -52,7 +52,7 @@ const features = [
       "A Web-App which promote India's Heritage and Culture",
     href: "/",
     cta: "Learn more",
-    background: <Image height={500} width={500} className="absolute opacity-60 object-cover" src="/assets/project/indiquest.png" />,
+    background: <Image height={500} width={500} className="absolute opacity-60 object-cover" src="/assets/project/indiquest.png" alt="indiquest" />,
     className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
   },
 ];

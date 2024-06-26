@@ -12,6 +12,7 @@ import '../app/styles/Swiper.modules.css'
 import Image from 'next/image';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import { Button,buttonVariants } from './ui/button';
 
 function App() {
 
@@ -19,12 +20,14 @@ function App() {
     <div className="lg:my-20 my-4 select-none">
       <div className='title flex justify-between'>
       <h1 className="heading">Project Gallery</h1>
-      <button className="btn hover:bg-pink-500 my-auto px-4 py-2 rounded-full">
-        <Link href={'/project'} >
-          View All
-        <ArrowRight className='inline'  />
-        </Link>
-      </button>
+          <Button className={buttonVariants({
+            variant:'classic'
+          })}>
+            <Link href={'/project'}>
+              View All
+            <ArrowRight className='inline'  />
+            </Link>
+          </Button>
       </div>
       <Swiper
         effect={'coverflow'}

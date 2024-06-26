@@ -1,8 +1,12 @@
 import React from 'react'
-import { LinkedinIcon, Instagram, Twitter, Github, } from 'lucide-react'
+import { LinkedInLogoIcon,TwitterLogoIcon,InstagramLogoIcon,GitHubLogoIcon } from '@radix-ui/react-icons'
 import Image from 'next/image'
+import { Dock, DockIcon } from '../../components/magicui/dock'
+import { Linkedin } from 'lucide-react'
 
 const page = () => {
+
+  
   return (
     <div className='h-screen lg:mx-64'>
       <Image 
@@ -11,23 +15,31 @@ const page = () => {
         width={1280} height={500} 
         alt='main' 
       />
-      <div className=''>
-        <h1 className=''>Let&apos;s Connect</h1>
-    </div>
-      <div className='socials flex'>
-        <a href='https://www.linkedin.com/in/'>
-          <LinkedinIcon size='32' />
-        </a>
-        <a href='https://www.instagram.com/'>
-          <Instagram size='32' />
-        </a>
-        <a href='https://twitter.com/'>
-          <Twitter size='32' />
-        </a>
-        <a href=''>
-          <Github size='32' />
-        </a>
+      <h1 className='text-4xl'>Let&apos;s Connect</h1>
+      <div className='content flex justify-center items-center'>
+        <div className='left'>
+            <Image src="/assets/srisanth.webp" width={350} height={350} 
+            className='contrast-100 hover:grayscale rounded-lg w-auto h-auto' alt='My-Image'/>
+            <Dock>
+              <DockIcon>
+                <Linkedin className='h-6 w-6'/>
+              </DockIcon>
+              <DockIcon>
+                <TwitterLogoIcon className='h-6 w-6'/>
+              </DockIcon>
+              <DockIcon>
+                <InstagramLogoIcon className='h-6 w-6'/>
+              </DockIcon>
+              <DockIcon>
+                <GitHubLogoIcon className='h-6 w-6'/>
+              </DockIcon>
+            </Dock>
+          </div>
+          <div className='form'>
+            
+          </div>
       </div>
+      
     </div>
   )
 }

@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import StarsCanvas from "../components/StarBackground";
 
-const outfit = Outfit({ subsets: ["latin"] });
+const outfit = Outfit({ subsets: ["latin"], display:'swap' });
 
 export const metadata = {
   title: "Srisanth | Portfolio",
