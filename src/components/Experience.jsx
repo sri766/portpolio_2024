@@ -5,30 +5,32 @@ import React from 'react'
 const Experience = () => {
   const exp = [
     {
+      name: 'Codespeedy Private Limited Internship',
+      year: '2023-34',
+      role: 'Web Developer',
+      tech: '',
+      desc: 'Work on JavaScript, and documented the code for the project',
+      pow: ''
+    },
+    {
       name: 'Summer Internship at NIT Rourkela',
       year: '2023-24',
       role: "frontend Internship",
       tech: ['React.js','TailwindCSS'],
       desc: "Build an Conference Website for National Conference for Noise and Vibrational Control",
       pow: 'https://effortless-bombolone-92c7e8.netlify.app/'
-    },
-    {
-      name: 'Codespeedy Private Limited Internship',
-      year: '2023-34',
-      role: 'Web Developer',
-      desc: 'Work on JavaScript, and documented the code for the project',
-      pow: ''
     }
+    
   ]
   return (
-    <div className='h-full w-full flex flex-col my-4'>
+    <div className='h-full w-full flex flex-col'>
       <div>
-        <h1 className='text-4xl my-4 '>Experience</h1>
+        <h1 className='text-4xl my-4'>Experience</h1>
       </div>
-      <div className='card flex flex-col justify-center mx-10 gap-2'>
+      <div className='card flex flex-col justify-center mx-10 gap-2 '>
       {exp?.map((e,index)=>{
         return (
-          <div key={index} className='card h-full border-l-4 border-purple-500 px-4 py-1 w-1/2'>
+          <div key={index} className='card h-full border-l-4 border-purple-500 px-4 py-1'>
             <h1 className='text-2xl select-none'>{e.name}</h1>
             <h2 className='text-sm select-none'>{e.year}</h2>
             <h3 className='text-lg font-bold gradient select-none'>{e.role}</h3>

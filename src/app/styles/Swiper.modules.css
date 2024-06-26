@@ -55,7 +55,7 @@
     left: 58% !important;
     transform: translateX(-58%) !important;
   }
-  
+
   @media (max-width: 990px) {
     .slider-controler .swiper-button-next {
       left: 70% !important;
