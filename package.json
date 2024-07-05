@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "build": "next build"
   },
   "dependencies": {
     "@apollo/client": "^3.10.6",
