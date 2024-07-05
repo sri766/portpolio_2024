@@ -51,6 +51,7 @@ const Navbar = () => {
                     <Link href='/' onClick={handleMobileView}>Home</Link>
                     <Link href='/about' onClick={handleMobileView}>About</Link>
                     <Link href='/project' onClick={handleMobileView}>Projects</Link>
+                    <Link href='/blog' onClick={handleMobileView}>Blogs</Link>
                     <Link href='/contact' onClick={handleMobileView}>Contact</Link>
                   </div>
                 </motion.nav>
@@ -62,6 +63,7 @@ const Navbar = () => {
             <Link href='/'>Home</Link>
             <Link href='/about'>About</Link>
             <Link href='/project'>Projects</Link>
+            <Link href='/blog'>Blogs</Link>
             <Link href='/contact'>Contact</Link>
           </nav>
         )}

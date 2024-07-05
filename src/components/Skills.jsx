@@ -62,7 +62,7 @@ const Skills = () => {
             autoPlay
             loop 
             muted 
-            className='w-full h-[550px] object-cover opacity-75 z-[-5] absolute'>
+            className='w-full h-[550px] object-cover opacity-35 z-[-5] absolute'>
             <source src='/space-assets/cards-video.webm' type='video/webm' />
         </video>
 
