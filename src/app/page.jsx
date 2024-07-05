@@ -2,7 +2,7 @@ import Hero from "../components/Hero";
 import Skills from "../components/Skills";
 import Swiper from "../components/Swiper";
 import Experience from "../components/Experience";
-
+import Footer from "../components/Footer";
 export default function Home() {
 
   return (
@@ -21,6 +21,7 @@ export default function Home() {
         <Experience />
         <Skills />
         <Swiper />
+        <Footer />
       </div>
     </>
   );
