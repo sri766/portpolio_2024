@@ -25,9 +25,9 @@ const Experience = () => {
   return (
     <div className='h-full w-full flex flex-col'>
       <div>
-        <h1 className='text-4xl my-4'>Experience</h1>
+        <h1 className='text-4xl my-4 flex justify-center font-bold'>Experience</h1>
       </div>
-      <div className='card flex flex-col justify-center mx-10 gap-2 '>
+      <div className='card flex flex-col justify-center mx-10 gap-2 p-4'>
       {exp?.map((e,index)=>{
         return (
           <div key={index} className='card h-full border-l-4 border-purple-500 px-4 py-1'>

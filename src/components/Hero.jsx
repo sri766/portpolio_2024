@@ -33,9 +33,10 @@ const Hero = () => {
       <div className='absolute lg:top-0 lg:right-[-200px] z-[-2] lg:z-0'>
             <Image 
               src="/space-assets/mainIconsdark.svg" 
-              className="opacity-60 w-auto h-auto"
+              className="opacity-50 w-auto h-auto"
               width={550} 
               height={550}
+              priority
               sizes='(max-width: 768px) 100vw, 550px' 
               alt='bg'/>  
         </div>
