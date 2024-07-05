@@ -25,7 +25,6 @@ export default async function page(){
         <div className='title my-4'>
           <h1 className='text-4xl font-bold flex justify-center items-center'>
             {title.displayTitle || title.title}
-            <BookmarkIcon size={32} className='ml-2'/>
           </h1>
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 mt-5'>
