@@ -1,9 +1,11 @@
 import React from 'react'
+import GetPosts from '../../components/GetPosts'
+
 
 const page = () => {
   return (
     <div>
-      blog
+      <GetPosts username={sri766}/>
     </div>
   )
 }
