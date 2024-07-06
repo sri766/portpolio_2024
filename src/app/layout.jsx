@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import StarsCanvas from "../components/StarBackground";
 import Providers from '../components/Providers'
+import { Toaster } from '../components/ui/sonner';
 
 const outfit = Outfit({ subsets: ["latin"], display: 'swap' });
 
@@ -16,11 +17,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      {/* <link rel="icon" href="/assets/icon.png" /> */}
       <body className={outfit.className}>
         <Providers>
           <Navbar />
           <StarsCanvas />
           {children}
+          <Toaster richColors closeButton/>
         </Providers>
       </body>
     </html>

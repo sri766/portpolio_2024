@@ -32,7 +32,9 @@ const Navbar = () => {
   return (
     <div className='my-2 mx-2 z-30 cursor-pointer px-2 lg:mx-64 flex justify-center items-center h-16'>
       <div className='flex justify-between items-center w-full '>
-        <div className='lg:text-4xl md:text-xl text-2xl font-bold gradient'>Srisanth</div>
+        <div className='lg:text-4xl md:text-xl text-2xl font-bold gradient'>
+          <Link href='/'>Srisanth</Link>
+        </div>
         {isMobile ? (
           <>
             <Menu className='lg:text-2xl text-lg' onClick={handleMobileView} />
