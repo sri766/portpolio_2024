@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react'
 import { Download, Sparkles, WandSparkles } from 'lucide-react';
 import { Button, buttonVariants } from './ui/button';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -25,7 +26,7 @@ const Hero = () => {
         </div>
       </div>
       <div className='intro relative'>
-        <div className='content flex flex-col justify-center items-start'>
+        <div className='content flex flex-col justify-center lg:items-start items-center'>
           <span className='text-lg font-bold border border-purple-800 px-4 rounded-full bg-purple-500 text-purple-200 bg-opacity-35 '>
             <WandSparkles className='inline m-2 text-purple-200' size={20}/>
           UX/UI Designer  
@@ -33,10 +34,12 @@ const Hero = () => {
           <h1 className='lg:text-4xl text-2xl font-bold'>Hello, I&apos;m 
             <span className='text-gradient ml-2'>Srisanth Seth</span>
           </h1>
-          <h2 className='text-xl lg:text-2xl font-medium '>A FullStack Developer & Devops Practitioner</h2>
-          <Button className={buttonVariants({variant: "classic"})}>
-            <Download className='inline m-2'/>
-            Resume
+          <h2 className='text-lg lg:text-2xl text-center'>A FullStack Developer & Devops Practitioner</h2>
+          <Button variant='classic'>
+            <Link href='https://drive.google.com/file/d/1azh7k16emQAxGMDYNpErs-kGizpl_cxy/view'>
+              <Download className='inline m-2'/>
+              Resume
+            </Link>
           </Button>
         </div>
       </div>
