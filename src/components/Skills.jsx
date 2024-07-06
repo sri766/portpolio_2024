@@ -17,7 +17,7 @@ const Skills = () => {
       { name: "Node.js", path: "/space-assets/node.png" },
       { name: "Express", path: "/space-assets/express.png" },
       { name: "Docker", path: "/space-assets/docker.webp" },
-      { name: "Jenkins", path: "/space-assets/jeninks.png" },
+      { name: "Jenkins", path: "/space-assets/jenkins.png" },
       { name: "MongoDB", path: "/space-assets/mongodb.png" },
       { name: "MySQL", path: "/space-assets/mysql.png" },
       { name: "Prisma", path: "/space-assets/prisma.webp" },
