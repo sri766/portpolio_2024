@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import StarsCanvas from "../components/StarBackground";
 import Providers from '../components/Providers'
 import { Toaster } from '../components/ui/sonner';
+import { Analytics } from "@vercel/analytics/react"
 
 const outfit = Outfit({ subsets: ["latin"], display: 'swap' });
 
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
           <StarsCanvas />
           {children}
           <Toaster richColors closeButton/>
+          <Analytics/>
         </Providers>
       </body>
     </html>
