@@ -5,8 +5,8 @@ import React from 'react'
 const Experience = () => {
   const exp = [
     {
-      name: 'Codespeedy Private Limited Internship',
-      year: '2023-34',
+      name: 'Codespeedy Technology Private Limited Internship',
+      year: '2023-24',
       role: 'Web Developer',
       tech: '',
       desc: 'Work on JavaScript, and documented the code for the project',
