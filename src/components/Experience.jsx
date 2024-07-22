@@ -1,5 +1,6 @@
 "use client"
 import { Link1Icon } from '@radix-ui/react-icons'
+import Link from 'next/link'
 import React from 'react'
 
 const Experience = () => {
@@ -7,16 +8,16 @@ const Experience = () => {
     {
       name: 'Codespeedy Technology Private Limited Internship',
       year: '2023-24',
-      role: 'Web Developer',
-      tech: '',
+      role: 'Web Developer and Technical Writer',
+      tech: 'JavaScript',
       desc: 'Work on JavaScript, and documented the code for the project',
-      pow: ''
+      pow: 'https://drive.google.com/file/d/1vKnyLPLnu0l8QMAKZA2fyFp8fj6v-NaW/view?usp=sharing'
     },
     {
       name: 'Summer Internship at NIT Rourkela',
       year: '2023-24',
-      role: "frontend Internship",
-      tech: ['React.js','TailwindCSS'],
+      role: "Frontend Internship",
+      tech: ['React.js, ','TailwindCSS'],
       desc: "Build an Conference Website for National Conference for Noise and Vibrational Control",
       pow: 'https://effortless-bombolone-92c7e8.netlify.app/'
     }
@@ -34,10 +35,11 @@ const Experience = () => {
             <h1 className='text-2xl select-none'>{e.name}</h1>
             <h2 className='text-sm select-none'>{e.year}</h2>
             <h3 className='text-lg font-bold gradient select-none'>{e.role}</h3>
+            {/* <h3 className='text-lg font-bold select-none border-2 p-1 w-fit'>{e.tech}</h3> */}
             <p className='px-4 py-2 select-none'>{e.desc}</p>
-            <a href={e.pow}>Project of Work
+            <Link href={e.pow} target='__blank'>Project of Work
               <Link1Icon className='w-6 h-6 inline m-2' />
-            </a>
+            </Link>
           </div>
         )
       })}
