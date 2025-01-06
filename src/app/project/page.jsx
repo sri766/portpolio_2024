@@ -8,6 +8,8 @@ import {
 } from "@radix-ui/react-icons";
 import Image from "next/image";
 
+import UX_UI from "../../components/uxui-project";
+
 const features = [
   {
     Icon: GlobeIcon,
@@ -79,6 +81,11 @@ const BentoDemo = () => {
           {...feature}/>
       ))}
        </BentoGrid>
+
+       <h1 className="text-center text-xl lg:text-7xl">UX/UI PROJECTS</h1>
+       <div className="">
+          <UX_UI/>
+       </div>
     </div>
   );
 };

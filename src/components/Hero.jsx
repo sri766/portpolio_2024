@@ -7,7 +7,7 @@ import Link from 'next/link';
 const Hero = () => {
   return (
     <>
-      <div className='flex flex-col lg:flex-row min-h-screen justify-evenly items-center'>
+      <div className='flex flex-col gap-20 lg:flex-row min-h-screen justify-evenly items-center'>
       <div className='left'>
         <div className="image w-fit h-fit relative">
           <Image 
@@ -26,27 +26,29 @@ const Hero = () => {
         </div>
       </div>
       <div className='intro relative'>
-        <div className='content flex flex-col justify-center lg:items-start items-center'>
+        <div className='content flex flex-col justify-center lg:items-end items-end'>
           <span className='text-lg font-bold border border-purple-800 px-4 rounded-full bg-purple-500 text-purple-200 bg-opacity-35 '>
             <WandSparkles className='inline m-2 text-purple-200' size={20}/>
           UX/UI Designer  
           </span>
-          <h1 className='lg:text-4xl text-2xl font-bold'>Hello, I&apos;m 
-            <span className='text-gradient ml-2'>Srisanth Seth</span>
-          </h1>
-          <h2 className='text-lg lg:text-2xl text-center'>A FullStack Developer & Devops Practitioner</h2>
-          <Button variant='classic'>
-            <Link href='https://drive.google.com/file/d/1azh7k16emQAxGMDYNpErs-kGizpl_cxy/view'>
-              <Download className='inline m-2'/>
-              Resume
-            </Link>
-          </Button>
+          <div className='flex flex-col items-center justify-center'> 
+            <h1 className='lg:text-4xl text-xl font-bold'>Hello, I&apos;m 
+              <span className='text-gradient ml-2'>Srisanth Seth</span>
+            </h1>
+            <h2 className='text-lg lg:text-2xl text-center'>A FullStack Developer & Devops Practitioner</h2>
+            <Button variant='classic' className="cursor-pointer z-10">
+              <Link href='https://drive.google.com/file/d/1azh7k16emQAxGMDYNpErs-kGizpl_cxy/view?usp=sharing'>
+                <Download className='inline m-2'/>
+                Resume
+              </Link>
+            </Button>
+          </div>
         </div>
       </div>
       <div className='absolute lg:top-0 lg:right-[-200px] z-[-2] lg:z-0'>
             <Image 
               src="/space-assets/mainIconsdark.svg" 
-              className="opacity-40 w-auto h-auto"
+              className="opacity-20 w-auto h-auto"
               width={550} 
               height={550}
               priority

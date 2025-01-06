@@ -9,7 +9,6 @@ const Skills = () => {
       { name: "JavaScript", path: "/space-assets/js.png" },
       { name: "TypeScript", path: "/space-assets/ts.png" },
       { name: "C++", path: "/space-assets/cpp.png" },
-      { name: "Python", path: "/space-assets/python.png" },
     ],
     toolsTechnologies: [
       { name: "React.js", path: "/space-assets/react.png" },
@@ -26,7 +25,11 @@ const Skills = () => {
     platforms: [
       { name: "Vercel", path: "/space-assets/vercel.svg" },
       { name: "Netlify", path: "/space-assets/netlify.png" },
-      { name: "DigitalOcean", path: "/space-assets/digitalocean.svg" },
+      { name: "AWS", path: "/space-assets/aws.png" },
+    ],
+    design:[
+      { name: "Figma", path: "/space-assets/figma.png" },
+      { name: "Tailwind", path: "/space-assets/tailwind.png" },
     ]
   };
 
@@ -47,7 +50,7 @@ const Skills = () => {
           {data.languages.map((item, index) => (
             <div key={index} className='flex gap-2 items-center p-2 rounded-lg bg-slate-100 bg-opacity-10 backdrop-blur-lg hover:scale-105 transition-transform duration-300'>
               <Image src={item.path} width={40} height={40} alt={item.name} className='mb-2' />
-              <p className='text-white text-lg'>{item.name}</p>
+              <p className='text-white text-sm'>{item.name}</p>
             </div>
           ))}
         </div>
@@ -59,7 +62,7 @@ const Skills = () => {
           {data.toolsTechnologies.map((item, index) => (
             <div key={index} className='flex gap-2 items-center p-2 rounded-lg bg-slate-100 bg-opacity-10 backdrop-blur-lg hover:scale-105 transition-transform duration-300'>
               <Image src={item.path} width={40} height={40} alt={item.name} className='mb-2 aspect-square object-contain object-center' />
-              <p className='text-white text-lg'>{item.name}</p>
+              <p className='text-white text-sm'>{item.name}</p>
             </div>
           ))}
         </div>
@@ -70,8 +73,20 @@ const Skills = () => {
         <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4'>
           {data.platforms.map((item, index) => (
             <div key={index} className='flex gap-2 items-center p-2 rounded-lg bg-slate-100 bg-opacity-10 backdrop-blur-lg hover:scale-105 transition-transform duration-300'>
-              <Image src={item.path} width={40} height={40} alt={item.name} className='mb-2 aspect-square object-center object-contain' />
-              <p className='text-white text-lg'>{item.name}</p>
+              <Image src={item.path} width={30} height={30} alt={item.name} className='mb-2 aspect-square object-center object-contain' />
+              <p className='text-white text-sm'>{item.name}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <h2 className='text-2xl font-semibold text-gray-300 mb-4'>Design</h2>
+        <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4'>
+          {data.design.map((item, index) => (
+            <div key={index} className='flex gap-2 items-center p-2 rounded-lg bg-slate-100 bg-opacity-10 backdrop-blur-lg hover:scale-105 transition-transform duration-300'>
+              <Image src={item.path} width={30} height={30} alt={item.name} className='mb-2 aspect-square object-center object-contain' />
+              <p className='text-white text-sm'>{item.name}</p>
             </div>
           ))}
         </div>

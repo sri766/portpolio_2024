@@ -12,7 +12,7 @@ export default function Home() {
           muted
           loop
           id='myVideo'
-          className='absolute h-[850px] rotate-180 left-0 top-[-55%] z-[-5] object-cover opacity-35'
+          className='absolute h-[850px] rotate-180 left-0 -top-[26rem] z-[-5] object-cover opacity-15'
         >
           <source src='/space-assets/blackhole.webm' type='video/webm' />
         </video>
